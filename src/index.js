@@ -1,12 +1,6 @@
 import './style.css';
+import appendMenu from './header'
 
-const content = document.getElementById('content')
+const content = document.getElementById('content');
 
-console.log("hello");
-
-const element = document.createElement('div');
-
-element.classList.add('hello');
-element.textContent = "elo";
-
-content.appendChild(element);
+appendMenu(content);
