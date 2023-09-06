@@ -1,14 +1,14 @@
-function appendMenu(content) {
+function appendMenu(appender) {
     const header = document.createElement('header')
     header.classList.add('header');
     const navbar = document.createElement('nav');
     navbar.classList.add('navbar');
 
     const logo = document.createElement('h1')
-    logo.textContent = 'lorem ipsum'
+    logo.textContent = 'Caffeine Cove'
 
     for(let i = 0; i < 3; i++) {
-        const names = ['Home', 'About', 'Contact']
+        const names = ['Home', 'Menu', 'Contact']
         const button = document.createElement('button');
         button.textContent = names[i];
 
@@ -18,7 +18,7 @@ function appendMenu(content) {
     header.appendChild(logo);
     header.appendChild(navbar);
 
-    content.prepend(header);
+    appender.prepend(header);
 }
 
 export default appendMenu;
