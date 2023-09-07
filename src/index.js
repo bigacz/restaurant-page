@@ -8,4 +8,4 @@ const body = content.parentElement;
 
 appendMenu(body);
 appendHome(content);
-appendFooter(body)
+appendFooter(body);
