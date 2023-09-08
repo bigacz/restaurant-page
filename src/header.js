@@ -1,6 +1,6 @@
 import logoImage from './logo.svg'
 
-function appendMenu(appender) {
+function appendMenu(appender, ) {
     const header = document.createElement('header');
     header.classList.add('header');
     const navbar = document.createElement('nav');

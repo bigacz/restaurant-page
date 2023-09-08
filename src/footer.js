@@ -17,9 +17,9 @@ function appendFooter(appender) {
     ////
 
     const contactHeader = document.createElement('h3');
-    contactHeader.textContent = "Contact"
+    contactHeader.textContent = 'Contact'
     const contactParagraph = document.createElement('p');
-
+    contactParagraph.innerHTML = '+14 764 876 984 <br> realemail@gmail.com'
 
     const contactBox = document.createElement('div');
     contactBox.appendChild(contactHeader);
