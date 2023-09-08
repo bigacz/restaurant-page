@@ -52,7 +52,6 @@ body::before {
     justify-content: space-around;
     background-color: black;
     position: sticky;
-
     align-items: center;
 }
 
@@ -101,8 +100,6 @@ h1 {
     background-color: rgba(0, 0, 0, 0.40);
 }
 
-
-
 .home {
     display: flex;
     flex-direction: column;
@@ -136,6 +133,10 @@ h1 {
 .footer h3 {
     margin: 0;
     padding: 0;
+}
+
+.menu {
+    background-color: whitesmoke;
 }
 
 .contact {

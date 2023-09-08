@@ -1,17 +1,14 @@
 import './style.css';
-import appendMenu from './header'
-import appendFooter from './footer';
-import appendHome from './home';
+import appendHeader from './scripts/header'
+import appendFooter from './scripts/footer';
 
-const content = document.getElementById('content');
+import appendHome from './scripts/home';
+import appendContact from './scripts/contact';
+import appendMenu from './scripts/menu';
+
+
 const body = content.parentElement;
 
-appendMenu(body, unappendContent, appendHome);
-appendHome(content);
+appendHeader(body, [appendHome, appendMenu, appendContact]);
 appendFooter(body);
-
-function unappendContent() {
-    while(content.childElementCount > 0) {
-        content.firstChild.remove();
-    }
-}
+appendHome();

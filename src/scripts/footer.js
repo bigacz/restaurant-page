@@ -5,7 +5,6 @@ function appendFooter(appender) {
     const addresHeader = document.createElement('h3');
     addresHeader.textContent = "Address"
     const hr1 = document.createElement('hr');
-
     const addressParagraph = document.createElement('p');
     addressParagraph.innerHTML = `531 Rosecrans Blvd <br> Cleveland Ohio `
     
@@ -18,12 +17,15 @@ function appendFooter(appender) {
 
     const contactHeader = document.createElement('h3');
     contactHeader.textContent = 'Contact'
+    const hr2 = document.createElement('hr');
     const contactParagraph = document.createElement('p');
     contactParagraph.innerHTML = '+14 764 876 984 <br> realemail@gmail.com'
 
     const contactBox = document.createElement('div');
     contactBox.appendChild(contactHeader);
+    contactBox.appendChild(hr2);
     contactBox.appendChild(contactParagraph);
+    
     ////
 
     footer.appendChild(addressBox);

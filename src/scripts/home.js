@@ -1,4 +1,6 @@
-function appendHome(appender) {
+function appendHome() {
+    const content = document.getElementById('content');
+
     const home = document.createElement('div');
     home.classList.add('home');
 
@@ -10,7 +12,7 @@ function appendHome(appender) {
     buyButton.textContent = 'Check our menu!';
     home.appendChild(buyButton);
 
-    appender.appendChild(home)
+    content.appendChild(home)
 }
 
 export default appendHome;

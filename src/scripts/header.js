@@ -1,6 +1,6 @@
-import logoImage from './logo.svg'
+import logoImage from '../logo.svg'
 
-function appendMenu(appender, ) {
+function appendHeader(appender, pages) {
     const header = document.createElement('header');
     header.classList.add('header');
     const navbar = document.createElement('nav');
@@ -21,6 +21,10 @@ function appendMenu(appender, ) {
         const names = ['Home', 'Menu', 'Contact'];
         const button = document.createElement('button');
         button.textContent = names[i];
+        button.addEventListener('click', e => {
+            unappendContent();
+            pages[i]();
+        })
 
         navbar.appendChild(button);
     }
@@ -31,5 +35,13 @@ function appendMenu(appender, ) {
     appender.prepend(header);
 }
 
-export default appendMenu;
+function unappendContent() {
+    const content = document.getElementById('content');
+    while(content.childElementCount > 0) {
+        content.firstChild.remove();
+    }
+}
+
+
+export default appendHeader;
     
