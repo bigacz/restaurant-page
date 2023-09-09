@@ -1,4 +1,4 @@
-import logoImage from '../logo.svg'
+import logoImage from '../images/logo.svg'
 
 function appendHeader(appender, pages) {
     const header = document.createElement('header');

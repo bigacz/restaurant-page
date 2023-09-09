@@ -7,11 +7,8 @@ function appendMenu() {
     const mapContainer = document.createElement('div');
     mapContainer.id = "map"
 
-
     content.appendChild(menu);
 }
-
-
 
 export default appendMenu;
 
