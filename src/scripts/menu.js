@@ -1,4 +1,4 @@
-import CoffeObjects from "./menuImages";
+import CoffeObjects from "./menuCoffees";
 
 function appendMenu() {
     const menuTiles = document.createElement('div');

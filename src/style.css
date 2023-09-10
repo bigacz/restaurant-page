@@ -174,11 +174,27 @@ h1 {
     background-color: tan;
 }
 
+.menu h4 {
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+
+}
+
 .menu-tiles {
-    display: flex;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    justify-content: center;
+}
+
+.menu-tiles div {
+    text-align: center;
+    padding: 1rem;
 }
 
 .menu-tiles img {
+    border-radius: 20px;
     height: auto;
     width: 100%;
 }
