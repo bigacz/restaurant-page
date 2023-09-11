@@ -20,13 +20,13 @@ function appendMenu() {
     
     //
 
-    const menu = document.createElement('div')
+    const menu = document.createElement('div');
     menu.classList.add('menu');
     menu.appendChild(menuTiles);
     
     //
 
-    const content = document.getElementById('content')
+    const content = document.getElementById('content');
     content.appendChild(menu);
 }
 

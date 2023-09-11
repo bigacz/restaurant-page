@@ -3,14 +3,18 @@
     --fs-700: 2rem;
     --fs-500: 1rem;
     --text: rgb(245, 245, 245);
+    --black: #1A120B;
+    --brown: #3C2A21;
+    --beige: #D5CEA3;
+    --light-beige: #E5E5CB;
 }
 
 hr {
     border-style: none none solid;
     height: 3px;
     border-radius: 10px; 
-    color: #fff; 
-    background-color: #fff;
+    color: var(--beige); 
+    background-color: var(--beige);
 }
 
 button {
@@ -49,16 +53,16 @@ body::before {
 .header {
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-color: var(--black);
     position: sticky;
     align-items: center;
 }
 
 h1 {
-    color: black;
+    color: var(--black);
     margin: none;
     padding: 0.3rem 1rem;
-    background-color: var(--text);
+    background-color: var(--light-beige);
     border-radius: 10px;
 }
 
@@ -88,15 +92,11 @@ h1 {
     border: none;
     font-size: var(--fs-700);
     background-color: rgba(245, 222, 179, 0);
-    color: var(--text)
+    color: var(--light-beige);
 }
 
 .navbar button:hover {
-    color:rgb(209, 209, 209)
-}
-
-.navbar button:active {
-    background-color: rgba(0, 0, 0, 0.40);
+    color: var(--beige);
 }
 
 .home {
@@ -109,7 +109,7 @@ h1 {
 }
 
 .home h2 {
-    color: rgb(255, 2v55, 255);
+    color: var(--light-beige);
     font-size: var(--fs-1000);
     padding: 0;
     margin: 0;
@@ -125,8 +125,8 @@ h1 {
     grid-auto-columns: 1fr;
     justify-items: center;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: var(--black);
+    color: var(--light-beige)
 }
 
 .footer h3 {
@@ -135,7 +135,7 @@ h1 {
 }
 
 .menu {
-    color: wheat;
+    color: var(--beige)
 }
 
 .contact {
@@ -143,7 +143,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: rgb(211, 193, 160);
+    background-color: var(--beige);
     padding: 0 min(10vw, 30rem);
     height: 100%;
 }
@@ -167,11 +167,10 @@ h1 {
 
 .info div {
     text-align: center;
-    
 }
 
 .map {
-    background-color: tan;
+    background-color: var(--beige)
 }
 
 .menu h4 {
@@ -198,4 +197,3 @@ h1 {
     height: auto;
     width: 100%;
 }
-
