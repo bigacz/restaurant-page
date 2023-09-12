@@ -10,4 +10,4 @@ const body = content.parentElement;
 
 appendHeader(body, [appendHome, appendMenu, appendContact]);
 appendFooter(body);
-appendHome();
+appendMenu();

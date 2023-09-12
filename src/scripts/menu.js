@@ -12,8 +12,8 @@ function appendMenu() {
         tileImage.src = element.getImage();
         
         const tile = document.createElement('div');
-        tile.appendChild(tileHeader);
         tile.appendChild(tileImage);
+        tile.appendChild(tileHeader);
         
         menuTiles.appendChild(tile);
     })

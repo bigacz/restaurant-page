@@ -140,7 +140,7 @@ h1 {
 }
 
 .home button:hover {
-    background-color: var(--black);
+    background-color: var(--brown);
     color: var(--beige);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -164,16 +164,11 @@ h1 {
     padding: 0;
 }
 
-.menu {
-    color: var(--beige)
-}
-
 .contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    background-color: var(--beige);
     padding: 0 min(10vw, 30rem);
     height: 100%;
 }
@@ -203,6 +198,11 @@ h1 {
     background-color: var(--beige)
 }
 
+.menu {
+    height: 100vh;
+    color: var(--beige)
+}
+
 .menu h4 {
     padding: 0;
     margin: 0;
@@ -212,18 +212,19 @@ h1 {
 
 .menu-tiles {
     display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
     justify-content: center;
 }
 
 .menu-tiles div {
+    display: flex;
     text-align: center;
     padding: 1rem;
 }
 
 .menu-tiles img {
     border-radius: 20px;
-    height: auto;
-    width: 100%;
+    height: 400px;
+    width: 300px;
 }
