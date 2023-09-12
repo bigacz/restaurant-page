@@ -5,6 +5,7 @@ function appendContact() {
     mapImage.src = map;
     
     const mapContainer = document.createElement('div');
+    mapContainer.classList.add('map-container')
     mapContainer.appendChild(mapImage);
 
     //
@@ -36,10 +37,10 @@ function appendContact() {
     //
 
     const hoursHeader = document.createElement('h3');
-    hoursHeader.textContent = 'Contact'
+    hoursHeader.textContent = 'Hours'
     const hr3 = document.createElement('hr');
     const hoursParagraph = document.createElement('p');
-    hoursParagraph.innerHTML = '+14 764 876 984 <br> realemail@gmail.com'
+    hoursParagraph.innerHTML = 'Monday - Friday 8AM - 9PM <br> Saturday 8AM - 4PM <br> Sunday Closed'
 
     const hoursBox = document.createElement('div');
     hoursBox.appendChild(hoursHeader);
@@ -58,8 +59,8 @@ function appendContact() {
 
     const contact = document.createElement('div');
     contact.classList.add('contact');
-    contact.appendChild(info);
     contact.appendChild(mapContainer);
+    contact.appendChild(info);
 
     
     const content = document.getElementById('content')
